@@ -397,6 +397,7 @@ class Request(object):
             "state": None,
             "token": None,
             "user": None,
+            "encoding":None,
         }
         self._params.update(dict(urldecode(self.uri_query)))
         self._params.update(dict(self.decoded_body or []))
